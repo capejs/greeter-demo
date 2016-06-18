@@ -1,24 +1,22 @@
-# README
+# Greeter - A demo app for `capejs-rails` gem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the Git repository for _Greeter,_ which is a simple application
+created using [Cape.JS](https://github.com/capejs/capejs) and [Ruby on Rails](https://github.com/rails/rails).
 
-Things you may want to cover:
+By reading its source code, you can learn how to construct _Single Page Applications_ (SPAs)
+combining the Cape.JS as front-end framework with the Rails as back-end framework.
 
-* Ruby version
+## Requirements
 
-* System dependencies
+* Ruby 2.2.2 or higher
+* Node 5.5 or higher
 
-* Configuration
+## Setting up and starting the server
 
-* Database creation
+Run following commands on the directory that the file `README.md` exists on.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```text
+$ bin/bundle
+$ bin/rails db:setup
+$ bin/rails s
+```
