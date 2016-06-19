@@ -1,4 +1,9 @@
 class VisitorForm extends Cape.Component {
+  init() {
+    this.agent = new VisitorListAgent(this)
+    this.refresh()
+  }
+
   render(m) {
     m.p("Please fill in your name on this form.")
     m.formFor('visitor', m => {
@@ -10,8 +15,19 @@ class VisitorForm extends Cape.Component {
         m.labelFor('given_name', 'Given Name')
         m.class('form-control').textField('given_name')
       })
-      m.onclick(e => $router.navigateTo('thanks'))
+      m.onclick(e => this.submit())
         .class('btn btn-primary').btn('Submit')
+    })
+  }
+
+  submit() {
+    this.agent.create(this.paramsFor('visitor'), data => {
+      if (data.result === 'Success') {
+        $router.navigateTo('thanks')
+      }
+      else {
+        this.refresh()
+      }
     })
   }
 }
