@@ -11,12 +11,33 @@ combining the Cape.JS as front-end framework with the Rails as back-end framewor
 * Ruby 2.2.2 or higher
 * Node 5.5 or higher
 
+## Getting Source Code
+
+### Using `wget` and `unzip`
+
+```text
+$ wget https://github.com/capejs/greeter-demo/archive/master.zip
+$ unzip master.zip
+$ mv greeter-demo-master greeter-demo
+```
+
+### Using `git`
+
+```text
+$ git clone git://github.com/capejs/greeter-demo.git
+```
+
 ## Setting up and starting the server
 
 Run following commands on the directory that the file `README.md` exists on.
 
 ```text
+$ cd greeter-demo
 $ bin/bundle
 $ bin/rails db:setup
 $ bin/rails s
 ```
+
+## Usage
+
+Open http://localhost:3000 with your browser.
