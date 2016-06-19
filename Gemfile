@@ -14,6 +14,7 @@ gem 'sass-rails', '~> 6.0.0.beta1'
 gem 'sprockets', '~> 4.0.0.beta2'
 gem 'sprockets-rails'
 gem 'babel-transpiler'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development, :test do
   gem 'byebug', platform: :mri
