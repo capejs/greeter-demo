@@ -4,11 +4,11 @@ class Api::VisitorsController < ApplicationController
   end
 
   def create
-    visitor = Visitor.new(visitor_params)
-    if visitor.save
+    @visitor = Visitor.new(visitor_params)
+    if @visitor.save
       render json: { result: 'Success' }
     else
-      render json: { result: 'Failure', errors: visitor.errors.full_messages }
+      render action: 'errors', format: 'json'
     end
   end
 
