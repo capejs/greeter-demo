@@ -41,3 +41,15 @@ $ bin/rails s
 ## Usage
 
 Open http://localhost:3000 with your browser.
+
+## References
+
+* [How to Make a Single Page Application (SPA) with Cape.JS and Rails](http://capejs.github.io/capejs/tutorials/greeter/)
+- A tutorial based on the source code of this application.
+* [Todo List](https://github.com/oiax/capejs-demo-on-rails)
+- Another demo app using Cape.JS and Ruby on Rails.
+* [Cape.JS Documentation](http://capejs.github.io/capejs/)
+
+## License
+
+Greeter is released under [the MIT License](LICENSE).
